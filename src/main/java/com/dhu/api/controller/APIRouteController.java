@@ -24,7 +24,11 @@ import com.dhu.api.service.SysCodeService;
 import com.dhu.common.ApiJsonResult;
 import com.dhu.common.base.ApiBaseController;
 import com.dhu.common.util.StringUtil;
-
+/**
+ * 路由控制
+ * @author lizehua
+ *
+ */
 @Controller
 @RequestMapping(value = "/api")
 public class APIRouteController extends ApiBaseController {

@@ -20,7 +20,11 @@ import com.dhu.api.service.ApiConfigService;
 import com.dhu.api.service.SysCodeService;
 import com.dhu.common.ApiJsonResult;
 import com.dhu.common.base.ApiBaseController;
-
+/**
+ * api路由配置管理
+ * @author lizehua
+ *
+ */
 @Controller
 @RequestMapping(value = "/admin/api")
 public class APIConfigController extends ApiBaseController {

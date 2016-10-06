@@ -79,6 +79,9 @@
 			<if test="hostName != null">
 				hostName,
 			</if>
+			<if test="requestMethod != null">
+				requestMethod,
+			</if>
 			<if test="description != null">
 				description,
 			</if>
@@ -113,6 +116,9 @@
 			</if>
 			<if test="hostName != null">
 				#{hostName,jdbcType=VARCHAR},
+			</if>
+			<if test="requestMethod != null">
+				#{requestMethod,jdbcType=VARCHAR},
 			</if>
 			<if test="description != null">
 				#{description,jdbcType=LONGVARCHAR},
@@ -153,6 +159,10 @@
       <if test="hostName != null">
         hostName = #{hostName,jdbcType=VARCHAR},
       </if>
+      <if test="requestMethod != null">
+        requestMethod = #{requestMethod,jdbcType=VARCHAR},
+      </if>
+      
       <if test="description != null">
         description = #{description,jdbcType=LONGVARCHAR},
       </if>
